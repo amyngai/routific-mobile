@@ -1,0 +1,47 @@
+.main-nav {
+	text-align: center;
+}
+
+.main-nav .btn {
+	background-color: #3E3E3E;
+	color: #fff;
+}
+
+.map {
+	background-image: url("images/mapbase.png");
+	background-repeat: no-repeat;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.visit-main {
+	background-color: #3E3E3E;
+	color: #fff;
+	height: 25%;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 70%;
+	position: absolute;
+	bottom: 20px;
+	left: auto;
+	right: auto;
+}
+
+ $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+});
